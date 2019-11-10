@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        nothing yet...
+        @ViewBag.Greeting Horácio (from the View)
+        <p>
+            we are going to have an exciting party! <br />
+        </p>
+        <div>
+            Add some pictures here
+            <img src="" />
+        </div>
+        <div>
+            <!-- Need to add a link from the home page to a Form-->
+            <!-- 
+                Html.ActionLink is a Helper Method
+                First parameter: Text to diplay in the link
+                second parameter: Action to perform 
+            -->
+            @Html.ActionLink("RSVP Now","RsvpForm" )
+
+        </div>
+    </div>
+</body>
+</html>
